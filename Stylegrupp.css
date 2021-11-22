@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background-color: #25292C;
+    color: #FFE82F;
+}
+
+
+
+main {
+    height: auto;
+}
+
+
+
+/* Detta är som första sidans intro*/
+section {
+    background-color: #25292C;
+    height: 750px;
+}
+.bild {
+    height: 450px;
+    width: 450px;
+    background-color: rgb(149, 7, 7);
+}
+.sec_rubrik {
+    font-size: 30px;
+    margin: 25px;
+}
+.sec_text {
+    font-size: 14px;
+    margin: 25px;
+    padding-bottom: 50px;
+}
+
+
+
+/* Detta är för kyh security blabla blocket. det kan bli snyggt och ha det i alla sidor. kanske?*/
+.kyh_security {
+    padding: 40px;
+}
+.kyh_security h5 {
+    margin: 0;
+    color: rgb(142, 142, 144);
+    padding-bottom: 25px;
+}
+.kyh_security h1 {
+    margin: 0;
+    padding-top: 25px;
+    font-size: 42px;
+    
+}
+
+
+/* Detta är för första section i index sidan, och för våra tjänster sida*/
+.section_ett {
+    text-align: center;
+}
+.card_section {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFE82F;
+}
+.card {
+    background-color: #25292C;
+    height: 340px;
+    width: 400px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.card_rubrik {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.card_text {
+    padding: 25px 20px;
+}
+.card a {
+    background-color: #FFE82F;
+    padding: 12px 35px;
+    border-radius: 20px;
+    margin: 20px;
+    color: #25292C;
+}
+.card_text {
+    color: white;
+}
+
+
+
+/* Detta är för andra section i index sidan om oss, och för om oss sida*/
+.omOss {
+    height: auto;
+    text-align: center;
+}
+.vemarvi {
+    background-color: rgb(242, 241, 241);
+}
+.om {
+    margin: 0;
+    padding: 0;
+}
+.om h3 {
+    padding: 55px;
+}
+.ansok {
+    margin: 60px;
+}
+.ansok a {
+    background-color: #25292C;
+    padding: 12px 35px;
+    border-radius: 20px;
+    margin: 20px;
+    color: #FFE82F;
+}
+
+
+
+/* Detta är för tredje section i index sidan, och för kontakt sida*/
+.contact {
+    background-color: rgb(244, 242, 242);
+    
+}
+.call {
+    background-color: #fff;
+    height: 150px;
+    padding: 70px;
+    text-align: center;
+}
+.meddelande {
+    margin: 45px;
+}
+.meddelande h2 {
+    margin: 80px 0px;
+}
+.meddelande input {
+    margin: 10px 0px;
+    padding: 10px 80px;
+    border-radius: 10px;
+}
+button {
+    background-color: #25292C;
+    padding: 12px 35px;
+    border-radius: 20px;
+    margin: 20px;
+    color: #FFE82F; 
+}
+
+
+
+
+
+
+/* Detta är för footer i alla sidor*/
+footer {
+    background-color: #25292C;
+    height: 300px;
+    padding: 25px;
+}
+footer div {
+    text-align: center; 
+}
+footer div a {
+    background-color: #FFE82F;
+    padding: 12px 15px;
+    border-radius: 20px;
+    margin: 10px ;
+}
+footer h4 {
+    padding-left: 30px;
+}
