@@ -3,33 +3,29 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
-
 header {
     background-color: #25292C;
     color: #FFE82F;
 }
 
-
-
 main {
     height: auto;
 }
 
-
-
 /* Detta är som första sidans intro*/
 section {
     background-color: #25292C;
-    height: 750px;
+    height: 650px;
+    text-align: center;
 }
 .bild {
-    height: 450px;
-    width: 450px;
+    height: 375px;
+    width: auto;
     background-color: rgb(149, 7, 7);
 }
 .sec_rubrik {
     font-size: 30px;
+    padding-top: 40px;
     margin: 25px;
 }
 .sec_text {
@@ -72,7 +68,7 @@ section {
 .card {
     background-color: #25292C;
     height: 340px;
-    width: 400px;
+    width: 370px;
     margin: 15px;
     border-radius: 15px;
 }
@@ -108,6 +104,9 @@ section {
     margin: 0;
     padding: 0;
 }
+.om h2 {
+    padding-bottom: 30px;
+}
 .om h3 {
     padding: 55px;
 }
@@ -139,19 +138,26 @@ section {
     margin: 45px;
 }
 .meddelande h2 {
+    font-size: 22px;
     margin: 80px 0px;
 }
 .meddelande input {
     margin: 10px 0px;
-    padding: 10px 80px;
+    height: 30px;
     border-radius: 10px;
+    width: 280px;
 }
 button {
     background-color: #25292C;
     padding: 12px 35px;
-    border-radius: 20px;
-    margin: 20px;
+    border-radius: 10px;
+    margin: 20px 0px;
     color: #FFE82F; 
+}
+textarea {
+    border-radius: 10px;
+    width: 280px;
+    margin: 10px 0px;
 }
 
 
@@ -162,18 +168,920 @@ button {
 /* Detta är för footer i alla sidor*/
 footer {
     background-color: #25292C;
-    height: 300px;
+    height: 450px;
     padding: 25px;
 }
 footer div {
     text-align: center; 
+    padding-bottom: 30px;
 }
 footer div a {
     background-color: #FFE82F;
     padding: 12px 15px;
     border-radius: 20px;
     margin: 10px ;
+    
 }
 footer h4 {
     padding-left: 30px;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px eller mindre) */
+@media only screen and (min-width: 600px) {
+    
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    header {
+        background-color: #25292C;
+        color: #FFE82F;
+    }
+    
+    main {
+        height: auto;
+    }
+    
+    /* Detta är som första sidans intro*/
+    section {
+        background-color: #25292C;
+        height: 650px;
+        text-align: center;
+    }
+    .bild {
+        height: 375px;
+        width: auto;
+        background-color: rgb(149, 7, 7);
+    }
+    .sec_rubrik {
+        font-size: 30px;
+        padding-top: 40px;
+        margin: 25px;
+    }
+    .sec_text {
+        font-size: 14px;
+        margin: 25px;
+        padding-bottom: 50px;
+    }
+    
+    
+    
+    /* Detta är för kyh security blabla blocket. det kan bli snyggt och ha det i alla sidor. kanske?*/
+    .kyh_security {
+        padding: 40px;
+    }
+    .kyh_security h5 {
+        margin: 0;
+        color: rgb(142, 142, 144);
+        padding-bottom: 25px;
+    }
+    .kyh_security h1 {
+        margin: 0;
+        padding-top: 25px;
+        font-size: 42px;
+        
+    }
+    
+    
+    /* Detta är för första section i index sidan, och för våra tjänster sida*/
+    .section_ett {
+        text-align: center;
+    }
+    .card_section {
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFE82F;
+    }
+    .card {
+        background-color: #25292C;
+        height: 340px;
+        width: 575px;
+        margin: 15px;
+        border-radius: 15px;
+    }
+    .card_rubrik {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .card_text {
+        padding: 25px 20px;
+    }
+    .card a {
+        background-color: #FFE82F;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #25292C;
+    }
+    .card_text {
+        color: white;
+    }
+    
+    
+    
+    /* Detta är för andra section i index sidan om oss, och för om oss sida*/
+    .omOss {
+        height: auto;
+        text-align: center;
+    }
+    .vemarvi {
+        background-color: rgb(242, 241, 241);
+    }
+    .om {
+        margin: 0;
+        padding: 0;
+    }
+    .om h2 {
+        padding-bottom: 30px;
+    }
+    .om h3 {
+        padding: 55px;
+    }
+    .ansok {
+        margin: 60px;
+    }
+    .ansok a {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #FFE82F;
+    }
+    
+    
+    
+    /* Detta är för tredje section i index sidan, och för kontakt sida*/
+    .contact {
+        background-color: rgb(244, 242, 242);
+        
+    }
+    .call {
+        background-color: #fff;
+        height: 150px;
+        padding: 70px;
+        text-align: center;
+    }
+    .meddelande {
+        margin: 45px;
+    }
+    .meddelande h2 {
+        font-size: 22px;
+        margin: 30px 0px;
+    }
+    .meddelande input {
+        margin: 10px 0px;
+        height: 30px;
+        border-radius: 10px;
+        width: 280px;
+    }
+    button {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 10px;
+        margin: 20px 0px;
+        color: #FFE82F; 
+    }
+    textarea {
+        border-radius: 10px;
+        width: 500px;
+        margin: 10px 0px;
+    }
+    
+    
+    
+    
+    
+    
+    /* Detta är för footer i alla sidor*/
+    footer {
+        background-color: #25292C;
+        height: 450px;
+        padding: 25px;
+    }
+    footer div {
+        text-align: center; 
+        padding-bottom: 30px;
+        
+    }
+    }
+    footer div a {
+        background-color: #FFE82F;
+        padding: 12px 15px;
+        border-radius: 20px;
+        margin: 10px ;
+        
+        
+    }
+    footer h4 {
+        
+        padding-left: 30px;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    header {
+        background-color: #25292C;
+        color: #FFE82F;
+    }
+    
+    main {
+        height: auto;
+    }
+    
+    /* Detta är som första sidans intro*/
+    section {
+        background-color: #25292C;
+        height: 650px;
+        text-align: center;
+    }
+    .bild {
+        height: 420px;
+        width: auto;
+        background-color: rgb(149, 7, 7);
+    }
+    .sec_rubrik {
+        font-size: 30px;
+        padding-top: 40px;
+        margin: 25px;
+    }
+    .sec_text {
+        font-size: 14px;
+        margin: 25px;
+        padding-bottom: 50px;
+    }
+    
+    
+    
+    /* Detta är för kyh security blabla blocket. det kan bli snyggt och ha det i alla sidor. kanske?*/
+    .kyh_security {
+        padding: 40px;
+    }
+    .kyh_security h5 {
+        margin: 0;
+        color: rgb(142, 142, 144);
+        padding-bottom: 25px;
+    }
+    .kyh_security h1 {
+        margin: 0;
+        padding-top: 25px;
+        font-size: 42px;
+        
+    }
+    
+    
+    /* Detta är för första section i index sidan, och för våra tjänster sida*/
+    .section_ett {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+    .card_section {
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFE82F;
+    }
+    .card {
+        background-color: #25292C;
+        height: 350px;
+        width: 620px;
+        margin: 15px;
+        border-radius: 15px;
+    }
+    .card_rubrik {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .card_text {
+        padding: 25px 20px;
+    }
+    .card a {
+        background-color: #FFE82F;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #25292C;
+    }
+    .card_text {
+        color: white;
+    }
+    
+    
+    
+    /* Detta är för andra section i index sidan om oss, och för om oss sida*/
+    .omOss {
+        height: auto;
+        text-align: center;
+    }
+    .vemarvi {
+        background-color: rgb(242, 241, 241);
+    }
+    .om {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "sedan iover"
+                             "bild bild"
+                             "rubrik rubrik ";
+        gap: 15px;
+    }
+    .sedan {
+        grid-area: sedan;
+    }
+    .iover {
+        grid-area: iover;
+    }
+    .om .bild {
+        grid-area: bild;
+    }
+    
+    
+    .om h2 {
+        padding-bottom: 30px;
+    }
+    .om h3 {
+        padding: 55px;
+    }
+    .ansok {
+        margin: 60px;
+        grid-area: rubrik;
+    }
+    .ansok a {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #FFE82F;
+    }
+    
+    
+    
+    /* Detta är för tredje section i index sidan, och för kontakt sida*/
+    .contact {
+        background-color: rgb(244, 242, 242);
+        
+    }
+    .call {
+        background-color: #fff;
+        height: 150px;
+        padding: 70px;
+        
+    }
+    .meddelande {
+        margin: 45px;
+        align-items: center;
+    }
+    .meddelande h2 {
+        font-size: 22px;
+        margin: 30px 0px;
+    }
+    .meddelande input {
+        margin: 10px 0px;
+        height: 30px;
+        border-radius: 10px;
+        width: 280px;
+    }
+    button {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 10px;
+        margin: 20px 0px;
+        color: #FFE82F; 
+    }
+    textarea {
+        border-radius: 10px;
+        width: 500px;
+        margin: 10px 0px;
+    }
+    
+    
+    
+    
+    
+    
+    /* Detta är för footer i alla sidor*/
+    footer {
+        background-color: #25292C;
+        height: 450px;
+        padding: 25px;
+    }
+    footer div {
+        text-align: center; 
+        padding-bottom: 30px;
+    }
+    footer div a {
+        background-color: #FFE82F;
+        padding: 12px 15px;
+        border-radius: 20px;
+        margin: 10px ;
+        
+    }
+    footer h4 {
+        padding-left: 30px;
+    }
+
+
+ }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    header {
+        background-color: #25292C;
+        color: #FFE82F;
+    }
+    
+    main {
+        height: auto;
+    }
+    
+    /* Detta är som första sidans intro*/
+    section {
+        background-color: #25292C;
+        height: 750px;
+        text-align: center;
+    }
+    .bild {
+        height: 520px;
+        width: auto;
+        background-color: rgb(149, 7, 7);
+    }
+    .sec_rubrik {
+        font-size: 30px;
+        padding-top: 40px;
+        margin: 25px;
+    }
+    .sec_text {
+        font-size: 14px;
+        margin: 25px;
+        padding-bottom: 50px;
+    }
+    
+    
+    
+    /* Detta är för kyh security blabla blocket. det kan bli snyggt och ha det i alla sidor. kanske?*/
+    .kyh_security {
+        padding: 40px;
+    }
+    .kyh_security h5 {
+        margin: 0;
+        color: rgb(142, 142, 144);
+        padding-bottom: 25px;
+    }
+    .kyh_security h1 {
+        margin: 0;
+        padding-top: 25px;
+        font-size: 42px;
+        
+    }
+    
+    
+    /* Detta är för första section i index sidan, och för våra tjänster sida*/
+    .section_ett {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+    .card_section {
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #FFE82F;
+    }
+    .card {
+        background-color: #25292C;
+        height: 400px;
+        width: 620px;
+        margin: 15px;
+        border-radius: 15px;
+    }
+    .card_rubrik {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .card_text {
+        padding: 25px 20px;
+    }
+    .card a {
+        background-color: #FFE82F;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #25292C;
+    }
+    .card_text {
+        color: white;
+    }
+    
+    
+    
+    /* Detta är för andra section i index sidan om oss, och för om oss sida*/
+    .omOss {
+        height: auto;
+        text-align: center;
+    }
+    .vemarvi {
+        background-color: rgb(242, 241, 241);
+    }
+    .om {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "sedan iover"
+                             "bild bild"
+                             "rubrik rubrik ";
+        gap: 15px;
+    }
+    .sedan {
+        grid-area: sedan;
+    }
+    .iover {
+        grid-area: iover;
+    }
+    .om .bild {
+        grid-area: bild;
+    }
+    
+    
+    .om h2 {
+        padding-bottom: 30px;
+    }
+    .om h3 {
+        padding: 55px;
+    }
+    .ansok {
+        margin: 60px;
+        grid-area: rubrik;
+    }
+    .ansok a {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #FFE82F;
+    }
+    
+    
+    
+    /* Detta är för tredje section i index sidan, och för kontakt sida*/
+    .contact {
+        background-color: rgb(244, 242, 242);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "bild bild"
+                             "meddelande ring";
+        gap: 15px;
+        align-items: center;
+        
+    }
+    .contact .bild {
+        grid-area: bild;
+    }
+    .call {
+        grid-area: ring;
+        height: 350px;
+        width: auto;
+        background-color: rgb(244, 242, 242);
+        padding: 50px;
+        border: #25292C solid 2px;
+        border-radius: 50px;
+        margin: 30px;
+        
+    }
+    .meddelande {
+        height: 350px;
+        grid-area: meddelande;
+        margin: 0;
+        width: auto;
+        padding: 50px;
+        border: #25292C solid 2px;
+        border-radius: 50px;
+        margin: 30px;
+    }
+
+    .meddelande h2 {
+        margin: 0px 0px 30px 0px;
+    }
+    .meddelande input {
+        margin: 10px 0px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        width: 300px;
+    }
+    button {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 10px;
+        margin: 20px 0px;
+        color: #FFE82F; 
+    }
+    textarea {
+        border-radius: 10px;
+        width: 300px;
+        height: 70px;
+        margin: 10px 0px;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* Detta är för footer i alla sidor*/
+    footer {
+        background-color: #25292C;
+        height: 450px;
+        padding: 25px;
+    }
+    footer div {
+        text-align: center; 
+        padding-bottom: 30px;
+    }
+    footer div a {
+        background-color: #FFE82F;
+        padding: 12px 15px;
+        border-radius: 20px;
+        margin: 10px ;
+        
+    }
+    footer h4 {
+        padding-left: 30px;
+    }
+
+
+ }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        max-width: 1280px;
+    }
+    header {
+        background-color: #25292C;
+        color: #FFE82F;
+    }
+    
+    main {
+        height: auto;
+
+    }
+    
+    /* Detta är som första sidans intro*/
+    section {
+        background-color: #25292C;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "bild bild bild"
+                             "rubrik texten texten";
+        gap: 15px;
+        text-align: left;
+    }
+    .bild {
+        grid-area: bild;
+        height: 600px;
+        width: auto;;
+        background-color: rgb(149, 7, 7);
+        
+    }
+    .sec_rubrik {
+        grid-area: rubrik;
+        font-size: 46px;
+        margin: 20px;
+        padding: 10px;
+        color: white;
+        
+    }
+    .sec_text {
+        grid-area: texten;
+        font-size: 18px;
+        color: white;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    
+    
+    /* Detta är för kyh security blabla blocket. det kan bli snyggt och ha det i alla sidor. kanske?*/
+    .kyh_security {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .kyh_security h5 {
+        margin: 0;
+        color: rgb(142, 142, 144);
+        padding-bottom: 25px;
+    }
+    .kyh_security h1 {
+        margin: 0;
+        padding-top: 25px;
+        font-size: 42px;
+        
+    }
+    
+    
+    /* Detta är för första section i index sidan, och för våra tjänster sida*/
+    .section_ett {
+        text-align: center;
+    }
+    .card_section {
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFE82F;
+    }
+    .card {
+        background-color: #25292C;
+        height: 400px;
+        width: 400px;
+        margin: 15px;
+        border-radius: 15px;
+    }
+    .card_rubrik {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .card_text {
+        padding: 25px 20px;
+    }
+    .card a {
+        background-color: #FFE82F;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #25292C;
+    }
+    .card_text {
+        color: white;
+    }
+    
+    
+    
+    /* Detta är för andra section i index sidan om oss, och för om oss sida*/
+    .omOss {
+        height: auto;
+        text-align: center;
+    }
+    .vemarvi {
+        background-color: #25292C;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "bild bild bild"
+                             "rubrik texten texten";
+        gap: 15px;
+    }
+    
+    .om {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "sedan iover"
+                             "bild bild"
+                             "rubrik rubrik ";
+        gap: 15px;
+    }
+    .sedan {
+        grid-area: sedan;
+    }
+    .over {
+        grid-area: iover;
+    }
+    h3 {
+        padding: 55px;
+    }
+    .ansok {
+        grid-area: rubrik;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .ansok a {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 20px;
+        margin: 20px;
+        color: #FFE82F;
+    }
+    .ansok h2 {
+        font-size: 40px;
+    }
+    
+    
+    
+    /* Detta är för tredje section i index sidan, och för kontakt sida*/
+    .contact {
+        background-color: rgb(244, 242, 242);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "bild bild"
+                             "meddelande ring";
+        gap: 15px;
+        align-items: center;
+        
+    }
+    .call {
+        height: 400px;
+        background-color: rgb(244, 242, 242);
+        
+        padding: 50px;
+        border: #25292C solid 2px;
+        border-radius: 50px;
+        
+    }
+    .meddelande {
+        height: 400px;
+        grid-area: meddelande;
+        
+        padding: 50px;
+        border: #25292C solid 2px;
+        border-radius: 50px;
+    }
+
+    .meddelande h2 {
+        margin: 0px 0px 30px 0px;
+    }
+    .meddelande input {
+        margin: 10px 0px;
+        padding: 10px 80px;
+        border-radius: 10px;
+    }
+    button {
+        background-color: #25292C;
+        padding: 12px 35px;
+        border-radius: 10px;
+        margin: 20px 0px;
+        color: #FFE82F; 
+    }
+    
+    
+    
+    
+    
+    
+    /* Detta är för footer i alla sidor*/
+    footer {
+        background-color: #25292C;
+        height: 300px;
+        padding: 25px;
+    }
+    footer div {
+        text-align: center; 
+    }
+    footer div a {
+        background-color: #FFE82F;
+        padding: 12px 15px;
+        border-radius: 20px;
+        margin: 10px ;
+    }
+    footer h4 {
+        padding-left: 30px;
+    }
 }
