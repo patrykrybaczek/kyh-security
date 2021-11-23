@@ -17,6 +17,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
 }
 
 .nav-links {
@@ -99,6 +101,7 @@
   height: 70px;
   background: #f9e747;
   position: absolute;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.377);
   right: 0;
   top: 0;
 }
