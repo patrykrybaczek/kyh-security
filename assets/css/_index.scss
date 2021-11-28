@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$Primary: rgb(43, 45, 48);
+$TogglePrimary: rgba(43, 45, 48, 0.815);
+$Secondary: rgb(249, 231, 71);
+$FontColor: white;
+
+.header {
+  background: url("/assets/img/sava-bobov-nPc9sDIqyfI-unsplash.jpg");
+
+  height: 40vh;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  position: relative;
+
+}
+
+.header-text {
+  text-align: center;
+  width: 500px;
+
+  color: $FontColor;
+  h1 {
+    margin: 20px;
+  }
+}

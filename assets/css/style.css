@@ -19,6 +19,7 @@
           justify-content: center;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+  z-index: 2;
 }
 
 .nav-links {
@@ -104,6 +105,7 @@
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.377);
   right: 0;
   top: 0;
+  z-index: 1;
 }
 
 .logo::after {
@@ -129,6 +131,7 @@
   background: rgba(43, 45, 48, 0.815);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  z-index: 1;
 }
 
 .toggle-link {
@@ -293,6 +296,46 @@
   }
   .toggle-menu {
     visibility: visible;
+    z-index: -1;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background: url("/assets/img/sava-bobov-nPc9sDIqyfI-unsplash.jpg");
+  height: 40vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -2;
+  position: relative;
+}
+
+.header-text {
+  text-align: center;
+  width: 500px;
+  color: white;
+}
+
+.header-text h1 {
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */
