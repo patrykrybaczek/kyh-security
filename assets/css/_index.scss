@@ -9,6 +9,9 @@ $TogglePrimary: rgba(43, 45, 48, 0.815);
 $Secondary: rgb(249, 231, 71);
 $FontColor: white;
 
+
+// ------------- Main Header, bild med text --------------- //
+
 .header {
   background: url("/assets/img/sava-bobov-nPc9sDIqyfI-unsplash.jpg");
 
@@ -18,7 +21,6 @@ $FontColor: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(1);
 
   display: flex;
   justify-content: center;
@@ -31,20 +33,169 @@ $FontColor: white;
 .header-text {
   text-align: center;
   width: 500px;
+  z-index: -2;
 
   color: $FontColor;
+  text-shadow: 2px 2px 10px black;
+  font-weight: 700;
+
+
   h1 {
     margin: 20px;
+    font-size: 3rem;
   }
 }
 
 
+
+
+// ---------- Card Services --------------- //
 .cards{
+background: rgba(34, 34, 34, 0.555);
+  height: auto;
+  z-index: -2;
 
-  background: green;
-  height: 20vh;
 
-  h1{
-    font-size: 2rem;
-  }
+
+
+  
 }
+
+// ---------- Card Header --------------- //
+
+.card-header{
+  background: $Primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  text-shadow: 2px 2px 10px black;
+  color: $Secondary;
+  z-index: 1;
+  position: relative;
+
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .c1{
+    background-image: url("/assets/img/tunnelbana.jpg") ;
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .c2{
+    background-image: url("/assets/img/arno-senoner-42t-DKecmPk-unsplash.jpg") ;
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .c3{
+    background-image: url("/assets/img/rayner-simpson-IdXShaU_UiA-unsplash.jpg") ;
+    width: 100%;
+    height: 100%;
+    
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    overflow: hidden;
+
+    
+    box-shadow: rgba(26, 26, 26, 0.452) 1px 7px 29px 0px;
+    border-radius: 10px;
+    h1{
+      margin-top: 10px;
+      color: $Secondary;
+    }
+    p{
+      margin: 15px;
+      color: $FontColor;
+      scale: 0.9;
+      transition: 0.2s;
+    }
+    #a-link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      width: 100px;
+      background: $Secondary;
+      color: $Primary;
+      z-index: 2;
+      border-radius: 5px;
+      transform: scale(0);
+
+    }
+
+
+  }
+  .card-item:hover::after{
+    transform: translateY(0%);
+    #a-link{
+      transform: scale(1);
+    }
+  }
+  .card-item:hover{
+    #a-link{
+      transform: scale(1);
+      transition: 0.5s ease-in-out;
+    }
+    p{
+      scale: 1;
+    }
+  }
+  .card-item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 60px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 1;
+    transform: translateY(100%);
+    transition: 0.2s ease-in-out;
+
+  }
+
+}
+
+
+
+
+
+// ---------- Footer --------------- //
+
+
+
+
+footer{
+  background: $Primary;
+  bottom: 0px;
+}
+
