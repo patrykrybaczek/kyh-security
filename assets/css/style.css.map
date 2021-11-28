@@ -4,7 +4,10 @@
     "sources": [
         "style.scss",
         "_navbar.scss",
-        "_index.scss"
+        "_index.scss",
+        "_contact.scss",
+        "_about.scss",
+        "_services.scss"
     ],
     "names": [],
     "file": "style.css"
