@@ -338,4 +338,13 @@
 .header-text h1 {
   margin: 20px;
 }
+
+.cards {
+  background: green;
+  height: 20vh;
+}
+
+.cards h1 {
+  font-size: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
