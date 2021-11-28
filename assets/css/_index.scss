@@ -51,7 +51,7 @@ $FontColor: white;
 
 // ---------- Card Services --------------- //
 .cards{
-background: rgba(34, 34, 34, 0.555);
+background: rgba(235, 235, 235, 0.555);
   height: auto;
   z-index: -2;
 
@@ -64,14 +64,13 @@ background: rgba(34, 34, 34, 0.555);
 // ---------- Card Header --------------- //
 
 .card-header{
-  background: $Primary;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 150px;
-  text-shadow: 2px 2px 10px black;
-  color: $Secondary;
+  color: $Primary;
   z-index: 1;
   position: relative;
 
@@ -82,35 +81,6 @@ background: rgba(34, 34, 34, 0.555);
   justify-content: center;
   align-items: center;
 
-  .c1{
-    background-image: url("/assets/img/tunnelbana.jpg") ;
-    width: 100%;
-    height: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .c2{
-    background-image: url("/assets/img/arno-senoner-42t-DKecmPk-unsplash.jpg") ;
-    width: 100%;
-    height: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-  }
-  .c3{
-    background-image: url("/assets/img/rayner-simpson-IdXShaU_UiA-unsplash.jpg") ;
-    width: 100%;
-    height: 100%;
-    
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
   .card-item{
     position: relative;
@@ -119,18 +89,25 @@ background: rgba(34, 34, 34, 0.555);
     align-items: center;
     justify-content: space-around;
     width: 250px;
-    height: 350px;
+    height: 300px;
     margin: 20px;
     overflow: hidden;
+    background: $Primary;
+
+    svg{
+      color: $Secondary;
+      width: 30px;
+
+    }
 
     
     box-shadow: rgba(26, 26, 26, 0.452) 1px 7px 29px 0px;
     border-radius: 10px;
     h1{
-      margin-top: 10px;
       color: $Secondary;
     }
     p{
+      text-align: center;
       margin: 15px;
       color: $FontColor;
       scale: 0.9;
@@ -147,6 +124,7 @@ background: rgba(34, 34, 34, 0.555);
       z-index: 2;
       border-radius: 5px;
       transform: scale(0);
+      margin-bottom: 10px;
 
     }
 
