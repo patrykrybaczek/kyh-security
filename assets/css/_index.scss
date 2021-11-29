@@ -175,5 +175,36 @@ background: rgba(235, 235, 235, 0.555);
 footer{
   background: $Primary;
   bottom: 0px;
+  font-size: 0.6rem;
+
+  display: flex;
+  flex-direction: column;
+
+  .display-text{
+    margin: 10px;
+    h1{
+      color: $Secondary;
+    }
+    h5{
+      color: beige;
+    }
+
+  }
+  .contact{
+    margin: 10px;
+    h4{
+      color: beige;
+    }
+  }
+  .social-media{
+    margin: 10px;
+
+    img{
+      width: 30px;
+
+    }
+  }
+
+
 }
 
