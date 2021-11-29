@@ -1,0 +1,157 @@
+.about {
+    width: auto;
+    text-align: center;
+}
+.photo {
+    height: 600px;
+    width: auto;
+    background: url('../img/arno-senoner-42t-DKecmPk-unsplash.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.titel {
+    padding: 20px;
+    margin: 20px;
+    text-shadow: 0.5px 0.4px 8px #a3a2a2;
+}
+.text {
+    margin: 20px;
+    padding-bottom: 40px;
+}
+
+.us {
+    height: 800px;
+    .b1 {
+        background-image: url(../assets/img/flex-point-security-ut4dQ0KqsQE-unsplash.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        margin: 10px;
+        align-items: center;
+        border: 2px solid gray;
+        border-radius: 10px; 
+    }
+    h3 {
+        margin-top: 20px;
+        text-shadow: 0.5px 0.4px 8px #a3a2a2;
+    }
+    .companyIcon {
+        height: 80px;
+        width: 80px;
+        background: url('../img/company.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .usIcon {
+        height: 80px;
+        width: 80px;
+        background: url('../img/multy-user.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+.apply {
+    margin-bottom: 50px;
+    h2 {
+        margin: 20px;
+        padding: 30px;
+        text-shadow: 0.5px 0.4px 8px #a3a2a2;
+    }
+    button {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: $Bg_Dark;
+        color: $Secondary;
+        border-radius: 12px;
+        border: 2px solid $Secondary;
+    }
+}
+.photo_1 {
+    height: 300px;
+    width: auto;
+    background: url('../img/flex-point-security-ut4dQ0KqsQE-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .photo {
+        height: 600px;
+        width: auto;
+        background: url('../img/arno-senoner-42t-DKecmPk-unsplash.jpg');
+        background-position: center ;
+        background-size: 100%;
+    }
+    .us {
+        display: grid;
+        
+        grid-template-rows: 200px auto 250px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "sedan oover"
+                             "photo photo"
+                             "app app";
+        .sedan {
+            grid-area: sedan;
+        }
+        .oover {
+            grid-area: oover;
+        }
+        .photo_1 {
+            grid-area: photo;
+            height: 500px;
+            width: auto;
+            background: url('../img/flex-point-security-ut4dQ0KqsQE-unsplash.jpg');
+            background-position: top;
+            background-size: 100%;
+        }
+        .apply {
+            grid-area: app;
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .photo {
+        height: 600px;
+        width: auto;
+        background: url('../img/arno-senoner-42t-DKecmPk-unsplash.jpg');
+        background-position: center -1000px;
+        background-size: 100%;
+    }
+    .us {
+        .b1 {
+            border: 0px;
+        }
+        display: grid;
+        grid-template-rows: 200px auto 250px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "sedan oover"
+                             "photo photo"
+                             "app app";
+        .sedan {
+            grid-area: sedan;
+        }
+        .oover {
+            grid-area: oover;
+        }
+        .photo_1 {
+            grid-area: photo;
+            height: 700px;
+            width: auto;
+            background: url('../img/flex-point-security-ut4dQ0KqsQE-unsplash.jpg');
+            background-position: top;
+            background-size: 120%;
+        }
+        .apply {
+            grid-area: app;
+        }
+    }
+}

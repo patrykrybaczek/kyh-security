@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$Primary: rgb(43, 45,48);
+$TogglePrimary: rgba(43, 45, 48, 0.815);
+$Secondary: rgb(249, 231,71);
+$FontColor: white;
+
+
+//--------------- NAVBAR ----------------//
+
+.navbar{
+    background: $Primary;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+    z-index: 3;
+    position: fixed;
+    width: 100vw;
+    
+    
+}
+.nav-links{
+    margin-right: 100px;
+
+    ul{
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            position: relative;
+            a{
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: $FontColor;
+            }
+        }
+
+    }
+    .list-item::after{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 0.8px;
+        width: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.1s ease-in;
+        background: $FontColor;
+
+    }
+    .list-item:hover::after{
+        width: 100%;
+    }
+}
+
+.burger{
+    visibility: hidden;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    
+    button{
+        border: none;
+        background: transparent;
+    }
+
+    .burger-item{
+        height: 3px;
+        width: 35px;
+        border-radius: 2px;
+        margin: 5px;
+        background: $Secondary;
+    }
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 70px;
+    background: $Secondary;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+}
+.logo::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-top: 60px solid $Secondary;
+    border-left: 150px solid transparent;
+
+}
+
+//--------------- TOGGLE MENU ----------------//
+
+.toggle-menu{
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: -100vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background: $TogglePrimary;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+}
+.toggle-link{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+
+        li{
+            list-style: none;
+            width: 80px;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+                font-size: 1.4rem;
+                color: $FontColor;
+            }
+        }
+    }
+    .toggle-list-item::after{
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        height: 1.5px;
+        width: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.1s ease-in;
+        background: $Secondary;
+    }
+    .toggle-list-item:hover::after{
+        width: 80px;
+    }
+
+}
+.toggle-btn{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    .toggle-button{
+        border: none;
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        background: $Secondary;
+        font-weight: 700;
+        transition: 0.1s ease-in;
+    }
+    .toggle-button:hover{
+        transform: scale(1.05);
+
+    }
+
+
+}
+.devider{
+    height: 10px;
+    display: flex;
+    justify-content: center;
+
+    .devider-item{
+        height: 2px;
+        border-radius: 10px;
+        width: 300px;
+        background: $Secondary;
+    }
+
+}
+.toggle-contact{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.toggle-social-media{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 30px;
+        margin: 10px;
+    }
+
+}
+
+.toggle-contact-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    .item{
+        display: flex;
+        margin: 10px;
+        svg{
+            color: $Secondary;
+            margin-right: 10px;
+
+        }
+    }
+}
+
+.active-toggle{
+    transform: translateX(100%);
+}
+//--------------- MEDIA QUERRY ----------------//
+
+
+@media screen and (max-width: 600px) {
+    .burger{
+        visibility: visible;
+
+    }
+    .nav-links{
+        display: none;
+    }
+    .toggle-menu{
+        visibility: visible;
+        z-index: 2;
+    }
+
+    
+}

@@ -1,0 +1,240 @@
+$Bg_Primary: rgb(255, 255, 255);
+$Bg_Secondary: rgb(235, 235, 235);
+$Bg_Dark: rgb(43, 45,48);
+
+.contact {
+    height: auto;
+    width: auto;
+    background-color: $Bg_Secondary;
+    .photo {
+        height: 380px;
+        background: url('../img/sava-bobov-nPc9sDIqyfI-unsplash.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 130%;
+    }
+    
+    .call {
+        height: 400px;
+        background-color: $Bg_Primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .callIcon {
+            height: 100px;
+            width: 100px;
+            background: url('../img/call.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 90%;
+        }
+        h2 {
+            padding-bottom: 10px;
+            text-shadow: 0.5px 0.4px 8px #a3a2a2;
+        }
+        h1 {
+            font-size: 50px;
+            text-shadow: 0.5px 0.4px 8px #a3a2a2;
+        }
+        .contact_icon {
+            background: url('../img/call.png');
+            background-position: center;
+            background-size: 100%;
+        }
+    }
+    .messageForm {
+        height: 650px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-shadow: 0.5px 0.4px 8px #a3a2a2;
+        }
+        form {
+            padding: 10px;
+            border: 2px solid $Bg_Dark;
+            border-radius: 10px;
+            
+            input {
+                padding: 10px;
+                border: 0;
+                margin: 5px;
+                border-radius: 10px;
+            
+            }
+            textarea {
+                border-radius: 10px;
+                border: 0;
+                padding: 10px;
+                margin: 5px;
+            }
+        }
+        button {
+            font-size: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: $Bg_Dark;
+            color: $Secondary;
+            border-radius: 12px;
+            border: 2px solid $Secondary;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .contact {
+        height: auto;
+        width: auto;
+        background-color: $Bg_Secondary;
+    
+        .photo {
+            height: 600px;
+            background: url('../img/sava-bobov-nPc9sDIqyfI-unsplash.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 140%;
+        }
+        
+        .call {
+            height: 300px;
+            background-color: $Bg_Primary;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .callIcon {
+                height: 100px;
+                width: 100px;
+                background: url('../img/call.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            
+            h2 {
+                padding-bottom: 10px;
+                text-shadow: 0.5px 0.4px 8px #a3a2a2;
+            }
+            h1 {
+                font-size: 50px;
+                text-shadow: 0.5px 0.4px 8px #a3a2a2;
+            }
+            .contact_icon {
+                background: url('../img/call.png');
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+        .messageForm {
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+            h2 {
+                font-size: 32px;
+                padding-bottom: 20px;
+                text-shadow: 0.5px 0.4px 8px #a3a2a2;
+                
+            }
+            form {
+                padding: 10px;
+                border: 2px solid $Bg_Dark;
+                border-radius: 10px;
+                margin-bottom: 50px;
+                display: grid;
+                grid-template-columns: repeat (2, 1fr );
+                grid-template-areas: "input textarea"
+                                     "input textarea"
+                                     "input textarea";
+                input {
+                    grid-area: input;
+                    padding: 10px;
+                    border: 0;
+                    margin: 5px;
+                    border-radius: 10px;
+                
+                }
+                textarea {
+                    grid-area: textarea;
+                    border-radius: 10px;
+                    border: 0;
+                    padding: 10px;
+                    margin: 5px;
+                }
+            }
+            button {
+                font-size: 16px;
+                padding: 5px 25px;
+                border: 0;
+                margin: 5px;
+                background-color: $Bg_Dark;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .contact {
+        height: auto;
+        
+        background-color: $Bg_Secondary;
+        
+        .photo {
+            height: 800px;
+            background: url('../img/sava-bobov-nPc9sDIqyfI-unsplash.jpg');
+            background-position: center;
+
+            background-size: 100%;
+        }
+        
+        .call {
+            height: 350px;
+            background-color: $Bg_Primary;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+            h2 {
+                padding-bottom: 10px;
+                text-shadow: 0.5px 0.4px 8px #a3a2a2;
+            }
+            h1 {
+                font-size: 50px;
+                text-shadow: 0.5px 0.4px 8px #a3a2a2;
+            }
+            .contact_icon {
+                background: url('../img/call.png');
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+        .messageForm {
+            height: 600px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                font-size: 32px;
+                padding-bottom: 20px;
+                text-shadow: 0.5px 0.4px 8px #a3a2a2;
+                
+            }
+            
+        }
+    }
+}
