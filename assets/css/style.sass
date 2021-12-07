@@ -1,0 +1,158 @@
+@import 'vars'
+a
+    text-decoration: none
+
+.hidden
+    display: none!important
+.show
+    display: flex!important
+
+body
+    margin: 0
+    background: $candy-gray
+    font-family: 'Red Hat Display', sans-serif
+    font-style: normal
+    
+.logo 
+    width: 175px!important
+
+button
+    border: 0
+    padding: 1em 2.5em
+    color: $dark-green
+    font-weight: 600
+    text-transform: uppercase
+    border-radius: 40px
+    background: $perfect-yellow
+
+// NAVIGATION
+.navigation
+    height: 80px
+    display: flex
+    justify-content: space-between
+
+    background: $dark-green
+    .navigation-header
+        width: 100vw
+        display: flex
+        justify-content: space-between
+
+#navigation-menu
+    hr 
+        display: none
+
+#toggleMobileMenuBtn
+    display: flex
+    align-items: center
+    margin-left: 20px
+
+    border: 0
+    background: none
+    #toggleIcon
+        color: $perfect-yellow
+        line-height: 0
+        font-size: 32px
+
+// MEDIA QUERYS
+@media (max-width: 720px)
+    #navigation-menu
+        width: 100vw
+        height: calc(100vh - 80px)
+        background: rgba(37, 41, 44, 0.55)
+        ul
+            margin: 0
+            padding: 2em 0em 0em 3em
+            display: flex
+            flex-direction: column
+
+            list-style: none
+            li
+                height: 9vh
+                a:hover
+                    color: $perfect-yellow
+                a
+                    color: #FFFFFF
+                    font-size: 24px
+                    text-decoration: none
+        button
+            height: 48px
+            margin: 0 auto
+            align-items: center
+        hr
+            border: 0
+            width: 80%
+            height: 2px
+            display: block
+            margin: 0 auto
+            margin-top: 2.5em
+            background: $perfect-yellow
+        .nav-contact-container
+            padding: 2.5em 0em 0 3em
+            display: flex
+            flex-direction: column
+            .nav-icons
+                width: 50%
+                display: flex
+                font-size: 38px
+                padding-bottom: 1em
+                color: $perfect-yellow
+                justify-content: space-between
+            .nav-footer
+                font-size: 20px
+                color: $perfect-yellow
+                .nav-footer-item
+                    padding-bottom: 1em
+                    a
+                        margin: 0 0 0 1em
+                        color: $perfect-yellow
+
+@media (min-width: 720px)
+    header
+        height: 80px
+        display: flex
+        flex-direction: row-reverse
+        background: #25292C
+        justify-content: space-between
+    .navigation 
+        display: flex
+        flex-flow: row-reverse
+        .navigation-header
+            width: auto!important
+            display: block!important
+            #toggleMobileMenuBtn
+                display: none!important
+    #navigation-menu
+        width: 100%
+        margin: 0 5vw 0 0
+        display: flex!important
+        align-items: center
+        flex-direction: row
+        justify-content: space-between
+        ul
+            width: 80%
+            display: flex
+            margin: 0
+            padding: 0
+            list-style: none
+            li
+                width: 100%
+                text-align: center
+                display: inline-block
+                a:hover 
+                    font-weight: 800
+                    border-bottom: 2px solid 
+                a
+                    color: $perfect-yellow
+                    font-weight: 400
+                    text-decoration: none
+    .nav-contact-container
+        display: none
+
+@media (max-width: 1080px)
+    #navigation-menu
+        margin: 0
+        justify-content: center
+        ul
+            width: 100%
+        button
+            display: none
