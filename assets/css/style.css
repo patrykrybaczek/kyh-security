@@ -121,7 +121,6 @@ main .landing-section h1 {
 
 main .landing-section p {
   margin: 0;
-  width: 80vw;
   color: #25292C;
 }
 
@@ -277,7 +276,6 @@ main .landing-section p {
     width: 100vw;
     height: calc(100vh - 80px);
     background: rgba(37, 41, 44, 0.9);
-    overscroll-behavior: contain;
   }
   #navigation-menu ul {
     margin: 0;
@@ -350,6 +348,9 @@ main .landing-section p {
   #navigation-menu .nav-contact-container .nav-footer .nav-footer-item a {
     margin: 0 0 0 1em;
     color: #FFE82F;
+  }
+  main .landing-section {
+    padding: 5px 5vh 15px 5vh;
   }
 }
 
@@ -453,6 +454,9 @@ main .landing-section p {
   }
   #navigation-menu button {
     display: none;
+  }
+  main .landing-section {
+    padding: 5px 10vh 15px 10vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
