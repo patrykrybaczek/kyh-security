@@ -35,6 +35,11 @@ a {
   width: 175px !important;
 }
 
+.current {
+  border-bottom: 1px solid #FFE82F;
+  padding: 0 0 5px 0;
+}
+
 button {
   border: 0;
   cursor: pointer;
@@ -347,6 +352,7 @@ main .landing-section p {
   }
   #navigation-menu .nav-contact-container .nav-footer .nav-footer-item a {
     margin: 0 0 0 1em;
+    font-weight: 600;
     color: #FFE82F;
   }
   main .landing-section {
